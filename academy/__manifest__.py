@@ -9,7 +9,7 @@
         This is a course learning Odoo app by Josué.
     """,
 
-    'author': "Josué Vital",
+    'author': "Josué Vital Acosta",
     'website': "https://www.yourcompany.com",
 
     'category': 'Custom Modules/Tech Training',
