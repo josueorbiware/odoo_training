@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Categoría para que los grupos aparezcan agrupados -->
+    <record id="module_category_motorcycle" model="ir.module.category">
+        <field name="name">Motorcycle</field>
+        <field name="description">Permisos relacionados al registro de motocicletas</field>
+        <field name="sequence">15</field>
+    </record>
+
+    <record id="group_motorcycle_admin" model="res.groups">
+        <field name="name">Motorcycle / Admin</field>
+        <field name="category_id" ref="motorcycle_registry.module_category_motorcycle"/>
+    </record>
+
+    <record id="group_motorcycle_user" model="res.groups">
+        <field name="name">Motorcycle / User</field>
+        <field name="category_id" ref="motorcycle_registry.module_category_motorcycle"/>
+    </record>
+</odoo>

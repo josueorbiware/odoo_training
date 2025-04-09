@@ -22,7 +22,8 @@
     'depends': ['base'],
 
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/motorcycle_groups.xml',
+        'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
     ],
