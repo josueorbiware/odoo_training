@@ -26,6 +26,7 @@
         'security/ir.model.access.csv',
         'views/views.xml',
         'views/motorcycle_menuitems.xml',
+        'views/motorcycle_views.xml',
         'views/templates.xml',
     ],
     # only loaded in demonstration mode
