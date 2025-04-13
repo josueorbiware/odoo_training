@@ -6,7 +6,7 @@ class MotorcycleRegistry(models.Model):
     _description = 'Motorcycle registry'
     _rec_name = 'registry_number'
 
-    certificate_title = fields.Binary(string='Título de propiedad')
+    certificate_title = fields.Binary(string='Titulo de propiedad')
     current_mileage = fields.Float(string='Millage Actual')
     first_name = fields.Char(string='Nombre', required=True)
     last_name = fields.Char(string='Apellido', required=True)
