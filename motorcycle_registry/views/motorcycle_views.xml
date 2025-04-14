@@ -9,6 +9,7 @@
             </header>
             <sheet>
                 <h1><field name="registry_number"/></h1>
+                <h2><field name="sequence_motorcycle"/></h2>
                 <group>
                     <group>
                         <separator string="Motorcycle Information"/>
@@ -43,6 +44,7 @@
               <field name="license_plate"/>
               <field name="first_name"/>
               <field name="last_name"/>
+              <field name="sequence_motorcycle"/>
           </tree>
       </field>
     </record>

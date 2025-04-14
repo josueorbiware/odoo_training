@@ -24,6 +24,7 @@
     'data': [
         'security/motorcycle_groups.xml',
         'security/ir.model.access.csv',
+        'data/sequence_motorcycle.xml',
         'views/views.xml',
         'views/motorcycle_menuitems.xml',
         'views/motorcycle_views.xml',
