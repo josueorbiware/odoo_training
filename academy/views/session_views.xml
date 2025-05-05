@@ -24,6 +24,7 @@
                     </group>
                     <group>
                         <separator string="Other Fields"/>
+                        <field name="student_ids" widget="many2many_tags"/>
                     </group>
                 </group>
                 <notebook>

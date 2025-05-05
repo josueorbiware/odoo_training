@@ -26,6 +26,7 @@
         'views/academy_menuitems.xml',
         'views/session_views.xml',
         'views/course_views.xml',
+        'reports/session_report_templates.xml',
         'views/views.xml',
         'views/templates.xml',
         'demo/course_demo.xml',
