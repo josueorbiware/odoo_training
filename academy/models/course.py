@@ -9,7 +9,7 @@ class Course(models.Model):
     active = fields.Boolean('Active', default=True)
     description = fields.Text('Description')
     level = fields.Selection(string='Level',selection=[('beginner', 'Beginner'), ('intermediate', 'Intermediate'), ('advanced', 'Advanced')])
-    session_id = fields.One2many('academy.session', string='Session', inverse_name='course_id')
+    session_ids = fields.One2many('academy.session', string='Session', inverse_name='course_id')
     currency_id = fields.Many2one('res.currency','Currency', default=lambda self:self.env.company.currency_id.id)
     base_price = fields.Monetary('Base Price', currency_field='currency_id')
     additional_fee = fields.Monetary('Additional Fee', currency_field='currency_id')
