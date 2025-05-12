@@ -13,7 +13,7 @@ class Course(models.Model):
     currency_id = fields.Many2one('res.currency','Currency', default=lambda self:self.env.company.currency_id.id)
     base_price = fields.Monetary('Base Price', currency_field='currency_id')
     additional_fee = fields.Monetary('Additional Fee', currency_field='currency_id')
-    total_price = fields.Monetary('Total Price', currency_field='currency_id', compute='_compute_total_price')
+    total_price = fields.Monetary('Total Price', currency_field='currency_id', compute='_compute_total_price', store=True)
 
     @api.depends('base_price', 'additional_fee')
     def _compute_total_price(self):
