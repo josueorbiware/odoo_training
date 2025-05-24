@@ -12,6 +12,7 @@
                     <field name="session_students_ids" invisible="1"/>
                     <field name="students_id" domain="[('id','in',session_students_ids)]"/>
                 </group>
+
                 <footer>
                     <button string="Create"
                             type="object"
