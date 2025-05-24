@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="academy_sale_wizard_form_view" model="ir.ui.view">
+        <field name="name">academy.sale.wizard.form</field>
+        <field name="model">academy.sale.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Create sale order from session">
+                <group>
+                    <field name="session_id"/>
+                    <field name="session_product_id"/>
+                    <field name="session_students_ids" invisible="1"/>
+                    <field name="students_id" domain="[('id','in',session_students_ids)]"/>
+                </group>
+                <footer>
+                    <button string="Create"
+                            type="object"
+                            name="create_sale_orders"
+                            class="oe_highlight"/>
+                    <button string="Cancel"
+                            special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="launch_sale_window" model="ir.actions.act_window">
+        <field name="name">Create Sale Order</field>
+        <field name="res_model">academy.sale.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="binding_model_id" ref="academy.model_academy_session"/>
+        <field name="target">new</field>
+    </record>
+</odoo>
